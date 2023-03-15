@@ -1,0 +1,212 @@
+.offers {
+    margin: 1rem;
+    @include lg {
+        display: flex;
+        justify-content: center;
+    }
+    .offer-1 {
+        background-color: $color-offer-light;
+        text-align: center;
+        @include md{
+            background-color: $color-offer-1;
+        }
+        .office-style {
+            .text-column {
+                padding: 2rem;
+                @include md {
+                    display: none;
+                }
+                .text-offer-office {
+                    font-weight: $font-weight-bold;
+                    font-size: $font-size-large;
+                    color: $color-dark-1;
+                }
+                a {
+                    color: $color-dark-1;
+                }
+            }
+            .offer-image {
+                display: none;
+                transition: opacity 0.2s, box-shadow 0.2s;
+                &:hover {
+                    box-shadow: 0 0 5px 2px $color-shadow-2;
+                    opacity: 85%;
+                } 
+                @include md {
+                    display: block;
+                }
+                a {
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    .offer-2 {
+        margin: 1em 0;
+        background-color: $color-light-3;
+        padding: 0.6em;
+        @include lg {
+            margin: 0 1rem;
+        }
+        @include xxxl {
+            margin: 0 2rem;
+        }
+        .offer-50 {
+            @include lg {
+                height: 100%;
+            }
+            .frame {
+                border: 0.5em solid $color-theme;
+                flex-direction: column;
+                @include content-center;  
+                padding: 2em 0em;
+                @include md {
+                    padding: 3em;
+                }
+                @include lg {
+                    padding: 0rem;
+                    height: 100%;
+                }
+                .offer-50-bigtext {
+
+                    font-weight: $font-weight-bold;
+                    font-size: $font-size-large;
+                    line-height: 1.5;
+                    @include md {
+                        font-size: $font-size-xl;
+                    }
+                    @include lg {
+                        font-size: $font-size-semi-large;
+                        line-height: none;
+                    }
+                    @include xl {
+                        font-size: $font-size-large;
+                    }
+                    @include xxl {
+                        font-size: $font-size-semi-xl;
+                    }
+                }
+                .offer-50-smalltext {
+                    font-size: $font-size-small;
+                    text-align: center;
+                    padding: 1.5em;
+                    @include md {
+                        padding: 3em;
+                        font-size: $font-size-standard;
+                    }
+                    @include lg {
+                        padding: 0.7em; 
+                        font-size: $font-size-small;
+                    }
+                    @include xl {
+                        padding: 1em 5em 1em 1em ; 
+                        font-size: $font-size-small;
+                        text-align: end;
+                    }
+                    @include xxxl {
+                        padding: 1em 10em 2em 1em;                       
+                    }
+                }
+                .button-box {
+                    a{
+                        padding: 0.7em 2em;
+                        &::before{
+                            content: "";
+                            height: 1em;
+                            width: 1em;
+                        }
+                        &::after{
+                            content: "";
+                            height: 1em;
+                            width: 1em;
+                        }
+                        @include md {
+                            padding: 1em 4em;
+                            &::before{
+                                content: "";
+                                height: 25px;
+                                width: 25px;
+                            }
+                            &::after{
+                                content: "";
+                                height: 25px;
+                                width: 25px;
+                            }
+                        }
+                        @include lg {
+                            padding: 0.7em 2.6em;
+                            font-size: $font-size-standard;
+                            &::before{
+                                content: "";
+                                height: 15px;
+                                width: 15px;
+                            }
+                            &::after{
+                                content: "";
+                                height: 15px;
+                                width: 15px;
+                            }
+                        }
+                        @include xl {
+                            padding: 1em 4em;
+                            &::before{
+                                content: "";
+                                height: 25px;
+                                width: 25px;
+                            }
+                            &::after{
+                                content: "";
+                                height: 25px;
+                                width: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .offer-3 {      
+        background-color: $color-offer-3-light;
+        text-align: center;
+        @include md{
+            background-color: $color-offer-3;
+        }
+        .party-style {
+            .text-column {
+                padding: 2rem;
+                @include md {
+                    display: none;
+                }
+                .text-offer-party {
+                    font-weight: $font-weight-bold;
+                    font-size: $font-size-large;
+                    color: $color-dark-1;
+                }
+                a {
+                    color: $color-dark-1;
+                }
+            }
+            .offer-image {
+                display: none;
+                transition: opacity 0.2s, box-shadow 0.2s;
+                &:hover {
+                    box-shadow: 0 0px 5px 2px $color-shadow-2;
+                    opacity: 90%;
+                } 
+                @include md {
+                    display: block;
+                }
+                a {
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.footer {
+    border-top: 1px solid $color-dark-3;
+    background: #f8f8f8;
+
+    .container {
+        padding: 20px 25px;
+
+        .bottom-icons {
+            @include content-center;
+
+            .end-icon {
+                height: 22px;
+                width: 22px;
+                font-size: 16px;
+                @include content-center;
+                color: $color-dark-2;
+                text-decoration: none;
+                transition: background-color 0.25s, color 0.20s;
+                margin-bottom: 2px;
+
+                &:hover,
+                &.active {
+                    color: $color-theme;
+                    text-decoration: none;
+                }
+            }
+        }
+        .end-title {
+            text-align: center;
+            margin-bottom: 10px;
+
+            &:hover,
+            &.active {
+                color: $color-theme;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/41c8b474e2.css" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+   <title>Contact Us - Fixxo.</title>
+</head>
+<body>
+        <!-- header -->
+        <header>
+            <div class="container">
+                <a id="logotype" class="logotype" href="index.html">FIXXO.</a>
+    
+                <div id="menu" class="collapse">
+                    <nav id="menu-links" class="menu-links">
+                        <a class="menu-link" href="index.html">Home</a>
+                        <a class="menu-link" href="products.html">Products</a>
+                        <a class="menu-link" href="contact.html">Contacts</a>
+                    </nav>
+                    
+                    <nav id="menu-icons" class="menu-icons">
+                        <a class="menu-link" href="#"><i class="fa-regular fa-search"></i></a>
+                        <a class="menu-link" href="#">
+                            <i class="fa-regular fa-code-compare"></i>
+                            <span class="menu-badge">12</span>
+                        </a>
+                        <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a class="menu-link" href="#">
+                            <i class="fa-regular fa-bag-shopping"></i>
+                            <span class="menu-badge">12</span>
+                        </a>
+                    </nav>
+                </div>
+      
+                <div id="toggle-icon" class="menu-icons">
+                    <button class="menu-link" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <i class="fa-regular fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </header>   
+        <section class="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li><a class="menu-link" href="index.html">Home</a></li>
+                    <li class="active">Contacts</li>
+                </ul>
+            </div>
+        </section>
+        <section class="google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2043.8080835943726!2d18.132484717443848!3d59.18578689999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f7b9074a99c31%3A0x33fb23ace1ef639c!2sNordkapsv%C3%A4gen%201%2C%20136%2058%20Haninge!5e0!3m2!1ssv!2sse!4v1676467041988!5m2!1ssv!2sse" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="contact-form">
+            <div class="container">
+                <h1>Come in Contact with Us</h1>
+                <form id="contact" novalidate onsubmit="handleSubmit(event)">
+                    <div class="contact-form-name">
+                        <input id="name" name="name" type="text" placeholder="Your Name" required onkeyup="validate(event)">
+                        <div id="error-name" class="error-msg"></div>
+                    </div>
+                    <div class="contact-form-email">
+                        <input id="email" name="email" type="email" placeholder="Your Mail" required onkeyup="validate(event)">
+                        <div id="error-email" class="error-msg"></div>
+                    </div>
+                    <div class="contact-form-comments">
+                        <textarea id="comment" name="comment" placeholder="Comments" required onkeyup="validate(event)"></textarea>
+                        <div id="error-comment" class="error-msg"></div>
+                    </div>
+                    <div class="contact-form-submit">
+                        <div id="error-submit" class="error-msg"></div>
+                        <button class="btn-theme" type="submit">Post Comments</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container">         
+                <div class="bottom-icons">
+                        <a class="end-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="end-icon" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="end-icon" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="end-icon" href="#"><i class="fa-solid fa-g"></i></a>        
+                </div>
+            <div class="end-title">© 2023 Fixxo. All Rights Reserved</div>
+        </section>     
+        <button id="totop-arrow"><i class="fa-solid fa-arrow-up"></i></button>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>

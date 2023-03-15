@@ -1,0 +1,53 @@
+$color-theme: #ff7373; 
+
+$color-dark-1: #000000;
+$color-dark-2: #222529;
+$color-dark-3: #616365;
+$color-dark-4: #faf7f3;
+
+$color-light-1: #ffffff;
+$color-light-2: #f5f5f5;
+$color-light-3: #eeeaea;
+
+$bg-transparent-light-1: #ffffffee;
+
+$color-shadow-1: rgba(0,0,0,0.10);
+$color-shadow-2: rgba(0, 0, 0, 0.214);
+$color-shadow-3: rgba(112,112,112,0.4);
+
+
+$color-offer-1: #fac49186;
+$color-offer-light: #fac4915a;
+$color-offer-3: #f9ca65f0;
+$color-offer-3-light: #f0c66b56;
+
+
+@mixin default-colors {
+    background-color: $color-light-1;
+    color: $color-dark-2;
+}
+@mixin default-colors-with-border {
+    background-color: $color-light-1;
+    color: $color-dark-2;
+    border: 1px solid $color-dark-2;
+}
+
+
+@mixin theme-colors {
+    background-color: $color-theme;
+    color: $color-light-2;
+}
+@mixin theme-colors-with-border {
+    background-color: $color-theme;
+    color: $color-light-2;
+    border: 1px solid $color-light-2;
+}
+@mixin dark-colors {
+    background-color: $color-dark-2;
+    color: $color-light-2;
+}
+@mixin theme-dark-colors-with-border {
+    background-color: $color-dark-2;
+    color: $color-dark-2;
+    border: 1px solid $color-dark-2;
+}

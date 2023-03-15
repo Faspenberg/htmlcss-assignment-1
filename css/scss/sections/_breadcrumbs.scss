@@ -1,0 +1,31 @@
+.breadcrumb {
+    margin-top: 30px;
+  
+    ul {
+        list-style: none;
+        margin: 0 0 20px 0;
+        padding: 0;
+  
+        li {
+            display: inline-block;
+            font-weight: $font-weight-medium;
+  
+            & + li::before {
+                content: "> ";
+                color: $color-dark-2;
+            }
+        }
+    }
+    .menu-link {
+        color: $color-dark-2;
+        text-decoration: none;
+  
+        &:hover {
+            color: $color-theme;
+            text-decoration: underline;
+        }   
+    } 
+    .active {
+        color: $color-theme;
+    }
+}

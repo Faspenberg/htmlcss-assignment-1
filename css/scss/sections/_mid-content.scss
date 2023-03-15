@@ -1,0 +1,67 @@
+.mid-images .container  {
+    margin: 20px;
+    margin-top: 100px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    .box {
+      display: block;
+      background-color: #eeeeee;  
+      width: 500px;
+    }
+    .office { 
+      width: 650px;
+      height: 380px;
+    }
+
+    .party{
+      width: 550px;
+      height: 380px;
+    }
+    
+    #box-2{
+      @include content-center;  
+    }
+    
+     .content-box-2 {
+      height: 360px;
+      width: 480px;
+      border: solid  10px rgb(245, 130, 130);
+    
+      .offer{
+        font-size: 3em;
+        @include content-center;  
+        margin-top: 20px;
+       }
+       .text-1{
+        margin-left: 50px;
+        font-size: 0.8em;
+        padding-bottom: 100px;
+    
+       }
+       .button{
+        margin-left: 100px;
+       }
+  }
+  
+  @media only screen and (max-width: 600px){
+    .mid-images .container .office{
+      display: none;
+    }
+    .mid-images .container .party{
+      display: none;
+   }
+   .box{
+    height: 380px;
+    width: 400px;
+   }
+   .content-box-2{
+    height: 360px;
+    width: 380px;
+   }
+   .button{
+    margin-left: 50px;
+   }
+}
+}

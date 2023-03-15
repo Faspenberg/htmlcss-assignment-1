@@ -1,0 +1,129 @@
+header {
+    background-color: $bg-transparent-light-1;
+    box-shadow: 0 0 2px 1px $color-shadow-1;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    
+  
+    .container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "logotype toggleicon"
+                             "menu menu";
+  
+        @include lg {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "logotype menu menu";
+            
+        }
+    }
+
+    #menu {
+        grid-area: menu;
+        grid-template-areas: "menulinks"
+                             "menuicons";
+                             
+  
+        @include lg {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "menulinks menuicons";
+        }
+    }
+    #logotype {
+        grid-area: logotype;
+    }
+    #menu-links {
+        grid-area: menulinks;
+        
+    }
+    #menu-icons {
+        grid-area: menuicons;
+        
+    }
+    #toggle-icon {
+        grid-area: toggleicon;   
+        
+        padding-left: 150px;
+ 
+        
+       @include md{
+          padding-left: 450px;
+       }
+        @include lg {
+            display: none;
+        }
+    }
+  
+    .logotype {
+        font-size: 2.188em;
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+        color: $color-dark-2;
+    }
+  
+    .menu-links {      
+        @include lg {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .menu-link {
+            color: $color-dark-2;
+            font-weight: $font-weight-medium;
+            text-decoration: none;           
+            margin: 15px 12px;
+            display: block;
+            transition: color 0.15s;
+            
+  
+            &:hover,
+            &.active {
+                color: $color-theme;
+                text-decoration: none;
+            }
+        }
+    }
+  
+    .menu-icons {
+        
+        @include content-center;
+         
+        @include lg {
+            margin-top: 0;
+            justify-content: flex-end;
+        }
+  
+        nav {
+            display: none;
+            @include lg {
+                display: flex;
+            }
+        }
+  
+        .menu-link {
+            position: relative;
+            height: 36px;
+            width: 36px;
+            @include content-center;
+            @include default-colors;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 0 5px 2px $color-shadow-1;
+            margin-left: 1rem;
+            transition: background-color 0.25s, color 0.20s;
+  
+            &:hover,
+            &.active {
+                @include dark-colors;
+                text-decoration: none;
+            }
+        }        
+    }
+  }
